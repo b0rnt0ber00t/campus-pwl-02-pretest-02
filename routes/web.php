@@ -17,4 +17,12 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::view('/', 'app');
+Route::view('/'            , 'app'         )->name('home');
+Route::view('/about'       , 'about'       )->name('about');
+Route::view('/pricing'     , 'pricing'     )->name('pricing');
+Route::view('/contact'     , 'contact'     )->name('contact');
+Route::view('/blog-grids'  , 'blog-grids'  )->name('blog');
+Route::view('/blog-details', 'blog-details')->name('blog.detail');
+Route::view('/signup'      , 'signup'      )->name('register');
+Route::view('/signin'      , 'signin'      )->name('login');
+Route::view('/404'         , '404'         )->name('404');
